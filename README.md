@@ -10,7 +10,7 @@ En este proyecto he realizado una página informativa del empredimiento de un fa
  El modelo está basado en una de las prácticas del curso de Diseño Web Profesional que se encuentra en la plataforma UDEMY.
 
 Para ver la página, se puede ingresar al siguiente link:
-[Dulce y Sabroso]()
+[Dulce y Sabroso](https://silvanacuadra.github.io/DulceYSabroso/)
 
 ## Tecnologías y lenguajes utilizados
 
