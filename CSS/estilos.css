@@ -1,0 +1,453 @@
+/* ---------- ESTILOS GENERALES ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------- ESTILOS HEADER ---------- */
+
+header {
+    width: 100%;
+    background: url("../img/fondo-min.png") #735d78;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .container {
+    position: relative;
+    height: 700px;
+}
+
+/* ---------- MENU DE NAVEGACIÓN ---------- */
+
+header .menu-nav{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+header .menu-nav a{
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 2.0;
+    margin: 10px;
+    padding: 0 15px;
+    position: relative;
+}
+
+header .menu-nav a:hover{
+    background: #f7d1cd;
+    color: #735d78;
+    border-radius: 100px;
+}
+
+/* ---------- NOMBRE EMPRENDIMIENTO ---------- */
+
+header .title {
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+
+}
+
+header .name {
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+header .sub-name {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .sub-name h3 {
+    font-size: 1.25em;
+    font-weight: 300;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+
+.main {
+    background: url("../img/bg-textura.png");
+    background-repeat: repeat;
+}
+
+.main .second-title {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.main .second-title i {
+    font-size: 2em;
+}
+
+.main .sub-title {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 2;
+    margin-right: 10px;
+}
+
+/* ---------- SECCION ABOUT-ME ---------- */
+
+.about-me .container{
+    overflow: visible;
+    position: relative;
+}
+
+.about-me .photo {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(90,90,90,0.6);
+}
+
+.about-me .photo img {
+    vertical-align: top;
+    width:100%;
+}
+
+.about-me article {
+    background: #f7d1cd;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(90,90,90,0.6);
+    float: right;
+}
+
+.about-me article h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.about-me article p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ---------- SECCION MENU ---------- */
+
+.menu {
+    padding-top: 570px;
+    margin-bottom: 50px;
+}
+
+.container-menu-border,
+.container-menu {
+    border: 1px solid #000000;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu article {
+    width: 50%;
+    padding: 20px;
+}
+
+article .category {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+article .product {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px dotted #7e7e7e;
+    overflow: hidden;
+}
+
+.product .name {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+}
+
+.product .ingredients {
+    line-height: 1.5;
+    color: #4b4b4b;
+}
+
+/* ------------ SECCION GALERIA ------------ */
+
+.galery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.galery .photo {
+    width: 25%;
+}
+
+.galery .photo img {
+    width: 100%;
+    vertical-align: top;
+    opacity: 0.7;
+}
+
+.galery .photo:hover img {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* ------------ SECCION LOCALIZACIÓN ------------ */
+
+.location {
+    padding: 30px 0;
+}
+
+.location .information {
+    display: flex;
+    justify-content: space-around;
+}
+
+.location .information div{
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.8;
+}
+
+.location .information .italic {
+    font-style: italic;
+}
+
+/* ------------ SECCION MAPA ------------ */
+
+.map {
+    width: 100%;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    max-height: 450px;
+}
+
+/* ------------ FOOTER ------------ */
+
+footer {
+    background: #735d78;
+}
+
+.footer-social {
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon {
+    font-size: 1.5em;
+    color: #f7d1cd;
+    margin: 0 10px;
+    padding: 10px 15px;
+}
+
+.footer-icon:hover {
+    color: #735d78;
+    background: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #e8c2ca;
+}
+
+.footer-social p {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #f7d1cd;
+    padding: 10px 15px;
+}
+
+footer .credits{
+    width: 100%;
+    color: #ffffff;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .credits a {
+    color: #ffffff;
+    padding: 0 5px;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+@media (max-width: 800px) {
+    header .container {
+        position: static;
+        height: auto;
+    }
+
+    header .title {
+        position: static;
+        margin: 80px 0;
+    }
+
+    header .menu-nav {
+        justify-content: center;
+    }
+
+    header .menu-nav a{
+        color: #ffffff;
+        font-size: 0.8em;
+        line-height: 1.5;
+        margin: 5px 0;
+        padding: 0 10px;
+    }
+
+    header .name {
+        font-size: 2.25em;
+    }
+    
+    header .sub-name h3 {
+        font-size: 1em;
+    }
+    
+    header .sub-name img {
+        width: 30px;
+    }
+
+    .about-me .photo {
+        width: 100%;
+        position: relative;
+    }
+
+    .about-me article {
+        width: 100%;
+        position: relative;
+        top: -50px;
+        transform: translate(0px, 0);
+    }
+
+    .menu {
+        padding-top: 300px;
+    }
+
+    .container-menu {
+        flex-wrap: wrap;
+    }
+
+    .menu article {
+        width: 100%;
+    }
+
+    .galery .photo {
+        width: 50%;
+    }
+
+    .map {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 450px) {
+
+    header .menu-nav a:hover {
+        background: transparent;
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    header .name {
+        font-size: 1.8em;
+    }
+
+    .main .sub-title {
+        font-size: 1.5em;
+    }
+
+    .about-me article {
+        padding: 20px;
+    }
+
+    .about-me article h3,
+    .about-me article p {
+        font-size: 0.9em;
+    }  
+
+    .menu article {
+        padding: 5px;
+    }
+
+    article .category {
+        margin-bottom: 15px;
+    }
+
+    .product .name {
+        font-size: 1em;
+    }
+
+    .galery .photo {
+        width: 100%;
+    }
+
+    .location .information {
+        flex-direction: column;
+    }
+
+    .footer-social {
+        flex-direction: column;
+    }
+
+    .footer-social-menu {
+        margin-bottom: 10px;
+    }
+}
