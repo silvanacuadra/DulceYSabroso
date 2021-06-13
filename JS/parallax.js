@@ -1,32 +1,23 @@
-$(document).ready(function () {
+const headerTitle = document.querySelector("header .title");
+const aboutArticle = document.querySelector(".about-me article");
 
-    $(window).scroll(function () {
-        let windowWidth = $(window).width();
+window.onscroll = () => {
+    let windowWidth = window.innerWidth;
 
-        if (windowWidth > 800) {
-            let scroll = $(window).scrollTop();
+    if (windowWidth > 800) {
+        let down = window.scrollY;
 
-            $("header .title").css({
-                "transform": "translate(0px, " + scroll / 2 + "%)"
-            })
+        headerTitle.style.transform = "translate(0px, " + down / 2 + "%)";
+        aboutArticle.style.transform = "translate(0px, -" + down / 2 + "%)";
+    }
+}
 
-            $(".about-me article").css({
-                "transform": "translate(0px, -" + scroll / 2 + "%)"
-            });
-        }
-    });
+window.onresize = () => {
+    let windowWidth = window.innerWidth;
 
-    $(window).resize(function(){
-        let windowWidth = $(window).width();
+    if (windowWidth < 800) {
 
-        if(windowWidth < 800) {
-            $(".about-me article").css({
-                "transform": "translate(0px, 0px)"
-            });
-
-            $("header .title").css({
-                "transform": "translate(0px, 0px)"
-            })           
-        }
-    })
-});
+        headerTitle.style.transform = "translate(0px, 0px)";
+        aboutArticle.style.transform = "translate(0px, 0px)";
+    }
+}
