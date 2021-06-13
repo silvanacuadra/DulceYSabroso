@@ -1,51 +1,13 @@
-$(document).ready(function () {
+const elementsNav = document.querySelectorAll(".menu-nav a");
+const titleHeader = document.querySelector("header .title");
 
-    // EFECTO EN EL MENÚ
+// EFECTO EN EL MENÚ
 
-    $(".menu-nav a").each(function (index) {
-        $(this).css({
-            'top': '-200px'
-        });
-
-        $(this).animate({
-            top: '0'
-        }, 1500 + (index * 500));
-    });
-
-
-    // EFECTO HEADER
-
-    if($(window).width() > 800 ){
-        $("header .title").css({
-            "opacity": 0,
-            "marginTop": 0
-        });
-    
-        $("header .title").animate({
-            opacity: 1,
-            marginTop: "-52px"
-        }, 2000);
-    } else {
-        $("header .title").css({
-            "opacity": 0
-        });
-    
-        $("header .title").animate({
-            opacity: 1
-        }, 2000);
-    }
-
-    $(window).resize(function(){
-        let windowWidth = $(window).width();
-
-        if(windowWidth < 800) {
-            $("header .title").css({
-                "marginTop": "80px"
-            });
-        }
-    })
-
-
-
-});
+for (let i = 0; i < elementsNav.length; i++) {
+    elementsNav[i].animate([{
+        transform: "translateY(-200px)"
+    }, {
+        transform: "translateY(0)"
+    }], {duration: 2000 + (i * 500)})
+}
 
