@@ -16,7 +16,7 @@ Para ver la página, se puede ingresar al siguiente link:
 
 - HTML5
 - CSS
-- JQUERY
+- JAVASCRIPT
 
 ## Funcionalidades
 La página tiene un diseño responsive por lo que se adapta a diferentes dispositivos. El menú y el nombre del emprendimiento tienen una sencilla animación de aparición progresiva. Además, en el caso que la página se abra en una computadora, se podrá observar un efecto parallax en la sección superior (descripción de la actividad),en donde los elementos se mueven a un ritmo distinto al hacer scroll. 
